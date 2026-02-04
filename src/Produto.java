@@ -1,7 +1,5 @@
 //exercício 4
 
-import java.math.BigDecimal;
-
 public class Produto {
 
     //declarando atributos

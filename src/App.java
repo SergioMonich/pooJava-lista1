@@ -23,7 +23,13 @@ public class App {
         Produto produto1 = new Produto("Mouse sem fio", 49.90, 25);
 
         produto1.valorEstoque();
+
+        //EX 5
+        Dono dono1 = new Dono("Felipe", carro1);
+        Dono dono2 = new Dono("Lucas", carro2);
         
+        dono1.infoDono();
+        dono2.infoDono();  
 
     }
 }
