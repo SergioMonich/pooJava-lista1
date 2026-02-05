@@ -21,6 +21,7 @@ public class Animal {
 
     }
 
+    //método genérico
     public void emitirSom() {
 
         System.out.println(nome + " fez som...");

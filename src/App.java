@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         
-        /* 
+
         //EX 2
         carro carro1 = new carro("Renault", "Sandero", 2017); //ao instanciar o objeto é preciso cumprir o contrato completo do construtor
         carro carro2 = new carro("Ford", "Ka", 2009);
@@ -85,10 +85,10 @@ public class App {
 
             scnr.close();
 
-        */
-
-        Animal animal1 = new Animal();
-        Animal Todinho = new Animal("Todinho", 7);
+        
+        //EX 8
+        Animal animal1 = new Animal(); //utilziando o construtor padrão
+        Animal Todinho = new Animal("Todinho", 7); //utilizando o construtor com parametros
         Cachorro Rex = new Cachorro("Rex", 4);
         Gato Mizu = new Gato("Mizu", 6);
 
@@ -97,6 +97,17 @@ public class App {
         Rex.emitirSom(); //obejto da classe filha consegue acessar método genérico, porém um animal genérico não consegue acesar os métodos das classes filhas
         Rex.latir();
         Mizu.miar();
+
+        
+
+        //EX 9
+        Funcionario Sergio = new Funcionario("Sergio", 5000);
+        Gerente Felipe = new Gerente("Felipe", 7500);
+
+        Sergio.mostrarSalario();
+        Felipe.mostrarSalario();
+        Felipe.aplicarBonus();
+        Felipe.mostrarSalario();
 
     }
 
