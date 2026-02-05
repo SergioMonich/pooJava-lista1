@@ -1,8 +1,8 @@
-import java.math.BigDecimal;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        
+        /* 
         //EX 2
         carro carro1 = new carro("Renault", "Sandero", 2017); //ao instanciar o objeto é preciso cumprir o contrato completo do construtor
         carro carro2 = new carro("Ford", "Ka", 2009);
@@ -16,7 +16,7 @@ public class App {
         pessoa pessoa1 = new pessoa("Sergio", 44);
         pessoa pessoa2 = new pessoa("Micheli", 46);
 
-        pessoa1.verificaIdade();
+        pessoa1.verificaIdade();//invocando método criado na classe pessoa
         pessoa2.verificaIdade();
 
         //EX 4
@@ -25,11 +25,67 @@ public class App {
         produto1.valorEstoque();
 
         //EX 5
-        Dono dono1 = new Dono("Felipe", carro1);
+        Dono dono1 = new Dono("Felipe", carro1); 
         Dono dono2 = new Dono("Lucas", carro2);
         
-        dono1.infoDono();
-        dono2.infoDono();  
+        dono1.infoDono();//invocando método criado na classe Dono
+        dono2.infoDono();
+        */
+
+
+        //EX 6
+        int opcaoSwitchCase;
+        
+        ContaBancaria conta1 = new ContaBancaria(0.00);
+
+        Scanner scnr = new Scanner(System.in);
+
+        do {
+
+            System.out.println("--->MENU<---");
+            System.out.println("1 - Consultar saldo");
+            System.out.println("2 - Depositar");
+            System.out.println("3 - Sacar");
+            System.out.println("0 - Sair");
+            System.out.println("Escolha uma opção: ");
+
+            opcaoSwitchCase = scnr.nextInt();
+
+            switch (opcaoSwitchCase) {
+                
+                case 1:
+                    
+                    conta1.mostrarSaldo();
+                    break;
+
+                case 2: 
+
+                    System.out.println("Valor do deposito: ");
+                    double valorDeposito = scnr.nextDouble();
+                    conta1.depositar(valorDeposito);
+                    break;
+                    
+                case 3:
+
+                    System.out.println("Valor do saque: ");
+                    double valorSaque = scnr.nextDouble();
+                    conta1.sacar(valorSaque);
+                    break;
+                    
+                case 0: 
+                    System.out.println("Encerrendo...");
+                    break;
+            
+                default:
+                    
+                    System.out.println("Opção inválida");
+                    
+            }
+
+        } while (opcaoSwitchCase != 0);
+
+            scnr.close();
 
     }
+
 }
