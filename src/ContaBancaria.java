@@ -17,7 +17,7 @@ public class ContaBancaria {
     //métodos
     public void depositar(double valor) {
 
-        this.deposito = valor;
+        this.deposito = valor; //esse valor é passado na classe principal
 
         if(valor > 0) {
 
@@ -35,7 +35,7 @@ public class ContaBancaria {
 
     public void sacar(double valor) {
 
-        this.saque = valor;
+        this.saque = valor; //esse valor é passado na classe principal
 
         if(valor > 0 && valor <= saldo) {
 
@@ -58,31 +58,6 @@ public class ContaBancaria {
     public void mostrarSaldo() {
 
         System.out.println("Saldo atual: R$" + saldo);
-
-    }
-
-    //getters
-    public double getDeposito() {
-        
-        return deposito;
-    }
-
-    public double getSaque() {
-
-        return saque;
-
-    }
-
-    //setter
-    public void setDeposito(double valor) {
-
-        this.deposito = deposito;
-
-    }
-
-    public void setSaque(double valor) {
-
-        this.saque = saque;
 
     }
 

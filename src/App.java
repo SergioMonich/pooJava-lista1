@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        
         /* 
         //EX 2
         carro carro1 = new carro("Renault", "Sandero", 2017); //ao instanciar o objeto é preciso cumprir o contrato completo do construtor
@@ -30,8 +31,6 @@ public class App {
         
         dono1.infoDono();//invocando método criado na classe Dono
         dono2.infoDono();
-        */
-
 
         //EX 6
         int opcaoSwitchCase;
@@ -85,6 +84,19 @@ public class App {
         } while (opcaoSwitchCase != 0);
 
             scnr.close();
+
+        */
+
+        Animal animal1 = new Animal();
+        Animal Todinho = new Animal("Todinho", 7);
+        Cachorro Rex = new Cachorro("Rex", 4);
+        Gato Mizu = new Gato("Mizu", 6);
+
+        animal1.emitirSom();
+        Todinho.emitirSom();
+        Rex.emitirSom(); //obejto da classe filha consegue acessar método genérico, porém um animal genérico não consegue acesar os métodos das classes filhas
+        Rex.latir();
+        Mizu.miar();
 
     }
 
