@@ -164,7 +164,7 @@ public class App {
         // ======================================================================================================================================================================
         // EX 10 - Classe Veiculo e Moto: Crie uma classe Veiculo e uma subclasse Moto. Adicione um atributo cilindrada e um método para exibi-lo.
         // ======================================================================================================================================================================
-
+        /*
         Moto moto1 = new Moto(150, "Honda", "CG 150");
         Moto moto2 = new Moto(300, "Yamaha", "Fazer");
         Moto moto3 = new Moto(650, "Royal Enfield", "Shotgun");
@@ -172,13 +172,34 @@ public class App {
         moto1.exibirInformacoes();
         moto2.exibirInformacoes();
         moto3.exibirInformacoes();
+        */
 
+        // ======================================================================================================================================================================
+        // EX 11 - Classe Professor e Aluno: Crie uma hierarquia onde Aluno e Professor herdam de Pessoa, cada um com atributos específicos. 
+        // ======================================================================================================================================================================
+        /*
+        Professor professor1 = new Professor("Robeta", 45, "Java", "ADS");
+        Professor professor2 = new Professor("Antonio", 36, "Banco de Dados", "ESW");
 
-        
+        Aluno aluno1 = new Aluno("Marcos", 22, "MATUTINO", "2A");
+        Aluno aluno2 = new Aluno("Carla", 26, "NOTURNO", "1B");
 
+        professor1.infoProfessor();
+        professor2.infoProfessor();
 
+        aluno1.infoAluno();
+        aluno2.infoAluno();
+        */
 
+        // ======================================================================================================================================================================
+        // EX 12 - Classe InstrumentoMusical: Crie uma superclasse InstrumentoMusical e subclasses como Violao e Piano, cada uma com um método tocar(). 
+        // ======================================================================================================================================================================
     
+        Violao violao1 = new Violao("Takamine", "GD11 MCE MGS", "Mogno");
+        Piano piano1 = new Piano("Yamaha", "CLP-800", "Preto");
+
+        violao1.tocar();
+        piano1.tocar();
 
     }
 

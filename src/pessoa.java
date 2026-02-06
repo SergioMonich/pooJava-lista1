@@ -5,7 +5,7 @@
 public class pessoa {
 
     //declarando atributos
-    private String nome;
+    protected String nome;
     private int idade;
 
     //construtor
