@@ -7,10 +7,14 @@ EX 8 - Criando uma Hierarquia de Classes: Crie uma classe Animal com os atributo
  */
 // ======================================================================================================================================================================
 
+// ======================================================================================================================================================================
+// EX 15 - Polimorfismo de Sobrescrita: Modifique Animal para que tenha um método emitirSom(). Em Cachorro e Gato, sobrescreva esse método. 
+// ======================================================================================================================================================================
+
 public class Animal {
 
     //declarando os atributos
-    private String nome;
+    protected String nome;
     private int idade;
 
     //construtor padrão (define valores "default")

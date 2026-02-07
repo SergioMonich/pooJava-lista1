@@ -7,6 +7,10 @@ EX 8 - Criando uma Hierarquia de Classes: Crie uma classe Animal com os atributo
  */
 // ======================================================================================================================================================================
 
+// ======================================================================================================================================================================
+// EX 15 - Polimorfismo de Sobrescrita: Modifique Animal para que tenha um método emitirSom(). Em Cachorro e Gato, sobrescreva esse método. 
+// ======================================================================================================================================================================
+
 //definição da subclasse ("extends")
 public class Gato extends Animal {
 
@@ -17,11 +21,21 @@ public class Gato extends Animal {
         
     }
 
-    //método específico
     public void miar() {
 
-        System.out.println("miau miau...");
+        System.out.println(nome + " fez miau miau...");
 
     }
+
+
+    //sobrescrita de método
+    @Override
+    public void emitirSom() {
+        
+        System.out.println(nome + " fez miau miau...");
+    
+    }
+
+    
 
 }
